@@ -1,0 +1,9 @@
+{
+    "intents": {
+        "guilds": true,
+        "members": true
+    },
+    "autorole": {
+        "role_id": 766513297065984
+    }
+}
