@@ -24,7 +24,8 @@ def run_bot(bot_dir_name):
         app_config.reload()
         intents = IntentsFromConf(app_config.params["intents"])
     
-    client = lolka.Client(intents=intents.build_intents())
+    client = lolka.Client(intents=intents.build_intents(), 
+                        chunk_guilds_at_startup=False) #убрал подгрузку всех участников гилды при поднятии бота, туду в конфиг
 
     bot_module = importlib.import_module(f"bots.{bot_dir_name}.bot")
     bot_module.setup(client, settings, app_config.params)

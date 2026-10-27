@@ -1,9 +1,20 @@
 {
+    "guild_id": 766506643670016,
     "intents": {
         "guilds": true,
-        "members": true
+        "members": true,
+        "guild_reactions": true
     },
     "autorole": {
         "role_id": 766513297065984
+    },
+    "react_role": {
+        "message_id": 766515203130368,
+        "map": {
+            "❤️": 766513297065984,
+            "💚": 766513313449984,
+            "🧡": 766513311253504,
+            "💙": 766513315399680
+        }
     }
 }
